@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+body {
+	font-family: "Hiragino Maru Gothic ProN", "ヒラギノ丸ゴ ProN W4", sans-serif;
+	font-weight: bold;
+	background-color: rgb(255, 255, 255);
+	text-align: center;
+	background-image: url();
+	color: brown;
+}
+
+h1 {
+	font-size: 28px;
+    background-color: rgb(255, 170, 85);
+    color: brown
+}
+
+h2 {
+	color: brown;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid honeydew;
+}
+
+.error-msg {
+    color: red;
+}
+
+table {
+	border: 1px solid black;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%; 					/* テーブル横幅 */
+	border-collapse:  collapse; 	/* 境界線を共有 */
+}
+
+th {
+	border: 1px solid black;
+    text-align:center;
+    background-color: lemonchiffon;
+    height: 32px;
+}
+
+td {
+	border: 1px solid black;
+	text-align: center;
+	height: 24px;
+}
+
+.select-list {
+    background-color: aliceblue;
+}
+
+.cart-list {
+    background-color: rgb(255, 255, 227);
+}
+
+.pay-list {
+    background-color: rgb(255, 255, 227);
+}
+
+.main-nav {
+    display: flex;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+.main-nav li {
+    margin-left: 36px;
+}
+.main-nav a {
+    color: #432;
+}
+.main-nav a:hover {
+    color: honeydew
+}
+
+.logo {
+    width: 100px;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+p {
+	color: brown;
+}
+
+.main-nav a[href='select.jsp'] {
+  color: brown;  /* 商品一覧のリンク色を赤に設定 */
+}
+
+.main-nav a[href='cart.jsp'] {
+  color: brown;  /* カートのリンク色を緑に設定 */
+}
+
+.main-nav a[href='logout-servlet'] {
+  color: brown;  /* ログアウトのリンク色を青に設定 */
+}
+
+input[type="submit"] {
+		font-weight: bold;
+        background-color: rgb(255, 255, 151); /* ボタンの背景色 */
+        color: brown; /* ボタンの文字色 */
+        padding: 10px 24px; /* ボタン内のスペース（上下・左右） */
+        border: none; /* ボーダーを消す */
+        border-radius: 4px; /* 角の丸み */
+        cursor: pointer; /* カーソルをポインタにする */
+       font-family: "Hiragino Maru Gothic ProN", "ヒラギノ丸ゴ ProN W4", sans-serif;
+    }
+    input[type="submit"]:hover {
+        background-color:honeydew; /* マウスオーバー時の背景色 */
+    }
+    
+     .item-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .item {
+        flex: 1 0 20%; /* flex-grow, flex-shrink, flex-basis */
+        margin: 1em;
+    }
+    
+    a {
+		color: brown;
+	    text-decoration: none;
+	}
+	
+	
+.container {
+    display: flex;
+    height: 350px;
+}
+
+h3 {
+	border-bottom: 2px orangered solid ;
+}
+
+.item-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%; /* 適切な値に調整してください */
+}
+
+.item {
+    width: calc(100% / 3);
+    box-sizing: border-box;
+    padding: 10px; /* 必要に応じて調整 */
+}
+
+.sidebar {
+    width: 25%; /* 適切な値に調整してください */
+    padding: 10px; /* 必要に応じて調整 */
+   border-style: dotted ;
+}
+
+.sub-menu {
+    margin-bottom: 60px;
+    list-style: none;
+}
+
+.sub-menu a {
+    color: brown;
+    padding: 10px;
+    display: block;
+    font-size: 0.8rem;
+    margin-right: 50px;
+}
+.sub-menu a:hover {
+    color: rgb(255, 255, 172);
+}
+
+/* フッター
+------------------------------- */
+footer {
+    background: #432;
+    text-align: center;
+    padding: 26px 0;
+}
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
